@@ -402,3 +402,17 @@ a {
     opacity: 0.4;
     margin-top: 0;
 }
+
+@media screen and (min-width:1024px) {
+    .quote {
+        font-size: 2.4rem;
+    }
+
+    .quote__name {
+        font-size: 2.4rem;
+    }
+
+    .quote__company {
+        font-size: 1.6rem;
+    }
+}
