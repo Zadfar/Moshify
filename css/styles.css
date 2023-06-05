@@ -5,6 +5,7 @@
     --color-headings: #1b0760;
     --color-body: #918ca4;
     --color-body-darker: #5c5577;
+    --color-icon:#393939;
     --color-border: #ccc;
     --border-radius: 30px;
 }
@@ -171,6 +172,10 @@ a {
 
 .icon--white {
     fill: white;
+}
+
+.icon--collapsible {
+    fill: var(--color-icon);
 }
 
 .icon-container {
@@ -532,4 +537,37 @@ a {
         justify-self: start;
         margin: 0 2rem;
     } 
+}
+
+/* Collapsibles */
+
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__heading {
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.collapsible__chevron {
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+    transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+    max-height: 100vh;
+    opacity: 1;
 }
