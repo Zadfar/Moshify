@@ -508,6 +508,10 @@ a {
     padding: 3rem;
 }
 
+.block-testimonial {
+    padding: 6rem 2rem 0 2rem;
+}
+
 .testimonial__image {
     position: relative;
     margin: 0 3rem;
